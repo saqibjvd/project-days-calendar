@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 1rem;
+}
+
+.calendar {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+

@@ -3,7 +3,37 @@
     <head>
         <script type="module" src="common.mjs"></script>
         <script type="module" src="web.mjs"></script>
+        <link rel="stylesheet" href="/style.css" />
+        <title>Days Calendar</title>
     </head>
     <body>
+        <header>
+            <h1 id="calendar-title">Days Calendar</h1>
+        </header>
+        <section id="controls" class="controls">
+            <button id="prev-button" class="button">Prev</button>
+            <label for="select-month">Select Month:</label>
+            <select id="select-month" name="select-month">Select Month:</select>
+            <label for="select-year">Select Year:</label>
+            <select id="select-year" name="select-year">Select Year:</select>
+            <button id="next-button" class="button">Next</button>
+        </section>
+        <main>
+            <section class="calendar" id="calendar"> 
+            <div class="weekdays" id="weekdays">
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+                <div>Sun</div>
+            </div>
+
+            <div id="days-container" class="days">
+                <!-- section to add the days here. -->
+            </div>
+            </section>
+        </main>
     </body>
 </html>
