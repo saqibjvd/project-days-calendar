@@ -1,0 +1,389 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//YourCompany//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:AdaLovelaceDay-2020@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20201013
+SUMMARY:Ada Lovelace Day (2020)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/ada.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalBinturongDay-2020@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20200509
+SUMMARY:International Binturong Day (2020)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/binturongs.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalVultureAwarenessDay-2020@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20200905
+SUMMARY:International Vulture Awareness Day (2020)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/vultures.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalRedPandaDay-2020@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20200919
+SUMMARY:International Red Panda Day (2020)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/red-pandas.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:WorldLemurDay-2020@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20201030
+SUMMARY:World Lemur Day (2020)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/lemurs.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:AdaLovelaceDay-2021@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20211012
+SUMMARY:Ada Lovelace Day (2021)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/ada.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalBinturongDay-2021@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20210508
+SUMMARY:International Binturong Day (2021)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/binturongs.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalVultureAwarenessDay-2021@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20210904
+SUMMARY:International Vulture Awareness Day (2021)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/vultures.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalRedPandaDay-2021@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20210918
+SUMMARY:International Red Panda Day (2021)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/red-pandas.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:WorldLemurDay-2021@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20211029
+SUMMARY:World Lemur Day (2021)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/lemurs.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:AdaLovelaceDay-2022@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20221011
+SUMMARY:Ada Lovelace Day (2022)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/ada.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalBinturongDay-2022@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20220514
+SUMMARY:International Binturong Day (2022)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/binturongs.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalVultureAwarenessDay-2022@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20220903
+SUMMARY:International Vulture Awareness Day (2022)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/vultures.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalRedPandaDay-2022@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20220917
+SUMMARY:International Red Panda Day (2022)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/red-pandas.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:WorldLemurDay-2022@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20221028
+SUMMARY:World Lemur Day (2022)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/lemurs.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:AdaLovelaceDay-2023@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20231010
+SUMMARY:Ada Lovelace Day (2023)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/ada.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalBinturongDay-2023@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20230513
+SUMMARY:International Binturong Day (2023)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/binturongs.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalVultureAwarenessDay-2023@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20230902
+SUMMARY:International Vulture Awareness Day (2023)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/vultures.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalRedPandaDay-2023@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20230916
+SUMMARY:International Red Panda Day (2023)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/red-pandas.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:WorldLemurDay-2023@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20231027
+SUMMARY:World Lemur Day (2023)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/lemurs.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:AdaLovelaceDay-2024@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20241008
+SUMMARY:Ada Lovelace Day (2024)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/ada.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalBinturongDay-2024@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20240511
+SUMMARY:International Binturong Day (2024)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/binturongs.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalVultureAwarenessDay-2024@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20240907
+SUMMARY:International Vulture Awareness Day (2024)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/vultures.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalRedPandaDay-2024@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20240921
+SUMMARY:International Red Panda Day (2024)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/red-pandas.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:WorldLemurDay-2024@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20241025
+SUMMARY:World Lemur Day (2024)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/lemurs.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:AdaLovelaceDay-2025@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20251014
+SUMMARY:Ada Lovelace Day (2025)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/ada.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalBinturongDay-2025@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20250510
+SUMMARY:International Binturong Day (2025)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/binturongs.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalVultureAwarenessDay-2025@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20250906
+SUMMARY:International Vulture Awareness Day (2025)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/vultures.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalRedPandaDay-2025@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20250920
+SUMMARY:International Red Panda Day (2025)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/red-pandas.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:WorldLemurDay-2025@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20251031
+SUMMARY:World Lemur Day (2025)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/lemurs.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:AdaLovelaceDay-2026@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20261013
+SUMMARY:Ada Lovelace Day (2026)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/ada.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalBinturongDay-2026@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20260509
+SUMMARY:International Binturong Day (2026)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/binturongs.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalVultureAwarenessDay-2026@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20260905
+SUMMARY:International Vulture Awareness Day (2026)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/vultures.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalRedPandaDay-2026@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20260919
+SUMMARY:International Red Panda Day (2026)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/red-pandas.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:WorldLemurDay-2026@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20261030
+SUMMARY:World Lemur Day (2026)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/lemurs.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:AdaLovelaceDay-2027@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20271012
+SUMMARY:Ada Lovelace Day (2027)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/ada.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalBinturongDay-2027@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20270508
+SUMMARY:International Binturong Day (2027)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/binturongs.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalVultureAwarenessDay-2027@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20270904
+SUMMARY:International Vulture Awareness Day (2027)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/vultures.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalRedPandaDay-2027@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20270918
+SUMMARY:International Red Panda Day (2027)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/red-pandas.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:WorldLemurDay-2027@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20271029
+SUMMARY:World Lemur Day (2027)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/lemurs.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:AdaLovelaceDay-2028@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20281010
+SUMMARY:Ada Lovelace Day (2028)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/ada.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalBinturongDay-2028@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20280513
+SUMMARY:International Binturong Day (2028)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/binturongs.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalVultureAwarenessDay-2028@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20280902
+SUMMARY:International Vulture Awareness Day (2028)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/vultures.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalRedPandaDay-2028@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20280916
+SUMMARY:International Red Panda Day (2028)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/red-pandas.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:WorldLemurDay-2028@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20281027
+SUMMARY:World Lemur Day (2028)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/lemurs.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:AdaLovelaceDay-2029@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20291009
+SUMMARY:Ada Lovelace Day (2029)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/ada.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalBinturongDay-2029@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20290512
+SUMMARY:International Binturong Day (2029)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/binturongs.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalVultureAwarenessDay-2029@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20290901
+SUMMARY:International Vulture Awareness Day (2029)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/vultures.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalRedPandaDay-2029@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20290915
+SUMMARY:International Red Panda Day (2029)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/red-pandas.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:WorldLemurDay-2029@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20291026
+SUMMARY:World Lemur Day (2029)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/lemurs.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:AdaLovelaceDay-2030@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20301008
+SUMMARY:Ada Lovelace Day (2030)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/ada.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalBinturongDay-2030@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20300511
+SUMMARY:International Binturong Day (2030)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/binturongs.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalVultureAwarenessDay-2030@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20300907
+SUMMARY:International Vulture Awareness Day (2030)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/vultures.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:InternationalRedPandaDay-2030@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20300921
+SUMMARY:International Red Panda Day (2030)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/red-pandas.txt
+END:VEVENT
+BEGIN:VEVENT
+UID:WorldLemurDay-2030@yourdomain.com
+DTSTAMP:20251013T192058Z
+DTSTART;VALUE=DATE:20301025
+SUMMARY:World Lemur Day (2030)
+DESCRIPTION:https://codeyourfuture.github.io/The-Piscine/days/lemurs.txt
+END:VEVENT
+END:VCALENDAR
