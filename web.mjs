@@ -9,27 +9,39 @@ import daysData from "./days.json" with { type: "json" };
 const months = [ "January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"];
 
+const daysContainer = document.getElementById("days-container");
+const selectMonth = document.getElementById("select-month");
+const selectYear = document.getElementById("select-year");
+
 window.onload = function() {
  //   document.querySelector("body").innerText = `${getGreeting()} - there are ${daysData.length} known days`;
-const daysContainer = document.getElementById("days-container");
 
 function renderCalendar(year,month){
     daysContainer.innerHTML = "";
- // call function that switch days from months
-    for (let i = 1; i <= 30 ; i ++){
+    // fill empties days
+    const firstDay = new Date(year,month,1).getDay();
+    for (let j = 1; j < firstDay ; j ++){
+        const emptyDay = document.createElement("div");
+        emptyDay.textContent = "  ";
+        console.log(emptyDay.textContent)
+        daysContainer.appendChild(emptyDay);
+    }
+    
+    const daysOfMonth = new Date(year,month + 1, 0).getDate();
+    // fill the day container
+    for (let i = 1; i <= daysOfMonth ; i ++){
         const day = document.createElement("div");
         day.textContent = i;
         daysContainer.appendChild(day);
     }
 }
  fillMonthSelector()
-//fillYearSelector()
+ fillYearSelector()
 const today = new Date();
 renderCalendar(today.getFullYear(),today.getMonth());
 }
 
 function fillMonthSelector() {
-    const selectMonth = document.getElementById("select-month");
     selectMonth.innerHTML = "";
 
   months.forEach((month, index) => {
@@ -38,4 +50,18 @@ function fillMonthSelector() {
     option.value = index;
     selectMonth.appendChild(option);
   });
+  const currentMonth = new Date().getMonth();
+  selectMonth.value = currentMonth;
+}
+function fillYearSelector(){
+    selectYear.innerHTML = "";
+
+    for ( let i = 1900 ; i <= 2050 ; i++){
+        const option = document.createElement("option");
+        option.textContent = i;
+        option.value = i;
+        selectYear.appendChild(option);
+    }
+    const currentYear = new Date().getFullYear();
+    selectYear.value = currentYear;
 }
