@@ -47,7 +47,7 @@ function generateIcal(events) {
 
   for (let year = 2020; year <= 2030; year++) {
     events.forEach(event => {
-      const { name, monthName, dayName, occurence, descriptionURL } = event;  // Note: 'occurence' spelling from your JSON
+      const { name, monthName, dayName, occurence, descriptionURL } = event; 
       
       const monthIndex = new Date(`${monthName} 1, 2000`).getMonth();
       const date = calculateOccurrenceDate(monthIndex, dayName, occurence.toLowerCase(), year);
