@@ -89,6 +89,10 @@ function fillYearSelector(){
 }
 
 function nextMonthBtn (){
+    if (activeMonth === 11 && activeYear === 2050){
+        alert("Limit reached!");
+        return;
+    }
     if (activeMonth === 11){
         activeMonth = 0;
         activeYear++;
@@ -101,6 +105,10 @@ function nextMonthBtn (){
 }
 
 function prevMonthBtn (){
+    if (activeMonth === 0 && activeYear === 1900){
+        alert("Limit reached!");
+        return;
+    }
     if (activeMonth===0){
         activeMonth = 11;
         activeYear--;
