@@ -6,16 +6,46 @@
 import { getGreeting } from "./common.mjs";
 import daysData from "./days.json" with { type: "json" };
 
+let activeMonth;
+let activeYear;
+
 const months = [ "January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"];
 
 const daysContainer = document.getElementById("days-container");
 const selectMonth = document.getElementById("select-month");
 const selectYear = document.getElementById("select-year");
+const nextButton = document.getElementById("next-button");
+const prevButton = document.getElementById("prev-button");
 
 window.onload = function() {
  //   document.querySelector("body").innerText = `${getGreeting()} - there are ${daysData.length} known days`;
 
+    selectMonth.addEventListener ("change", function(){
+        activeMonth = parseInt(selectMonth.value,10);
+        renderCalendar(activeYear,activeMonth);
+    });
+    selectYear.addEventListener ("change", function(){
+        activeYear = parseInt(selectYear.value,10);
+        renderCalendar(activeYear,activeMonth);
+    });
+    nextButton.addEventListener("click",function(){
+        activeMonth++;
+        selectMonth.value = activeMonth; // add after december
+        renderCalendar(activeYear,activeMonth);
+    });
+    prevButton.addEventListener("click",function(){
+        activeMonth--;
+        selectMonth.value = activeMonth; // add after december
+        renderCalendar(activeYear,activeMonth);
+    });
+    fillMonthSelector()
+    fillYearSelector()
+    const today = new Date();
+    activeMonth = today.getMonth();
+    activeYear = today.getFullYear();
+    renderCalendar(activeYear,activeMonth);
+}
 function renderCalendar(year,month){
     daysContainer.innerHTML = "";
     // fill empties days
@@ -23,7 +53,6 @@ function renderCalendar(year,month){
     for (let j = 1; j < firstDay ; j ++){
         const emptyDay = document.createElement("div");
         emptyDay.textContent = "  ";
-        console.log(emptyDay.textContent)
         daysContainer.appendChild(emptyDay);
     }
     
@@ -32,13 +61,9 @@ function renderCalendar(year,month){
     for (let i = 1; i <= daysOfMonth ; i ++){
         const day = document.createElement("div");
         day.textContent = i;
+        day.value = i
         daysContainer.appendChild(day);
     }
-}
- fillMonthSelector()
- fillYearSelector()
-const today = new Date();
-renderCalendar(today.getFullYear(),today.getMonth());
 }
 
 function fillMonthSelector() {
