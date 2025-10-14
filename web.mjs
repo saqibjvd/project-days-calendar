@@ -17,10 +17,10 @@ const selectMonth = document.getElementById("select-month");
 const selectYear = document.getElementById("select-year");
 const nextButton = document.getElementById("next-button");
 const prevButton = document.getElementById("prev-button");
+const titleCalendar = document.getElementById("calendar-title")
 
 window.onload = function() {
- //   document.querySelector("body").innerText = `${getGreeting()} - there are ${daysData.length} known days`;
-
+    // event listeners, select and buttons
     selectMonth.addEventListener ("change", function(){
         activeMonth = parseInt(selectMonth.value,10);
         renderCalendar(activeYear,activeMonth);
@@ -29,24 +29,22 @@ window.onload = function() {
         activeYear = parseInt(selectYear.value,10);
         renderCalendar(activeYear,activeMonth);
     });
-    nextButton.addEventListener("click",function(){
-        activeMonth++;
-        selectMonth.value = activeMonth; // add after december
-        renderCalendar(activeYear,activeMonth);
-    });
-    prevButton.addEventListener("click",function(){
-        activeMonth--;
-        selectMonth.value = activeMonth; // add after december
-        renderCalendar(activeYear,activeMonth);
-    });
+    nextButton.addEventListener("click",nextMonthBtn);
+    prevButton.addEventListener("click",prevMonthBtn);
+    // fill selectors
     fillMonthSelector()
     fillYearSelector()
+    // rendering
     const today = new Date();
     activeMonth = today.getMonth();
     activeYear = today.getFullYear();
     renderCalendar(activeYear,activeMonth);
 }
 function renderCalendar(year,month){
+    // Title
+    const textMonth = months[month]
+    titleCalendar.textContent = `${textMonth} - ${year}`
+    // Adding days
     daysContainer.innerHTML = "";
     // fill empties days
     const firstDay = new Date(year,month,1).getDay();
@@ -65,7 +63,6 @@ function renderCalendar(year,month){
         daysContainer.appendChild(day);
     }
 }
-
 function fillMonthSelector() {
     selectMonth.innerHTML = "";
 
@@ -89,4 +86,28 @@ function fillYearSelector(){
     }
     const currentYear = new Date().getFullYear();
     selectYear.value = currentYear;
+}
+
+function nextMonthBtn (){
+    if (activeMonth === 11){
+        activeMonth = 0;
+        activeYear++;
+        selectYear.value = activeYear;
+    }else{
+        activeMonth++;
+    }
+    selectMonth.value = activeMonth; // add after december
+    renderCalendar(activeYear,activeMonth); 
+}
+
+function prevMonthBtn (){
+    if (activeMonth===0){
+        activeMonth = 11;
+        activeYear--;
+        selectYear.value = activeYear;
+    } else {
+        activeMonth--;
+    }
+    selectMonth.value = activeMonth; // add after december
+    renderCalendar(activeYear,activeMonth);
 }
