@@ -21,28 +21,30 @@ const prevButton = document.getElementById("prev-button");
 window.onload = function() {
  //   document.querySelector("body").innerText = `${getGreeting()} - there are ${daysData.length} known days`;
 
-selectMonth.addEventListener ("change", function(){
-    activeMonth = parseInt(selectMonth.value,10);
+    selectMonth.addEventListener ("change", function(){
+        activeMonth = parseInt(selectMonth.value,10);
+        renderCalendar(activeYear,activeMonth);
+    });
+    selectYear.addEventListener ("change", function(){
+        activeYear = parseInt(selectYear.value,10);
+        renderCalendar(activeYear,activeMonth);
+    });
+    nextButton.addEventListener("click",function(){
+        activeMonth++;
+        selectMonth.value = activeMonth; // add after december
+        renderCalendar(activeYear,activeMonth);
+    });
+    prevButton.addEventListener("click",function(){
+        activeMonth--;
+        selectMonth.value = activeMonth; // add after december
+        renderCalendar(activeYear,activeMonth);
+    });
+    fillMonthSelector()
+    fillYearSelector()
+    const today = new Date();
+    activeMonth = today.getMonth();
+    activeYear = today.getFullYear();
     renderCalendar(activeYear,activeMonth);
-});
-selectYear.addEventListener ("change", function(){
-    activeYear = parseInt(selectYear.value,10);
-    renderCalendar(activeYear,activeMonth);
-});
-nextButton.addEventListener("click",function(){
-    activeMonth++;
-    renderCalendar(activeYear,activeMonth);
-});
-prevButton.addEventListener("click",function(){
-    activeMonth--;
-    renderCalendar(activeYear,activeMonth);
-});
- fillMonthSelector()
- fillYearSelector()
-const today = new Date();
-activeMonth = today.getMonth();
-activeYear = today.getFullYear();
-renderCalendar(activeYear,activeMonth);
 }
 function renderCalendar(year,month){
     daysContainer.innerHTML = "";
