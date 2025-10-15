@@ -60,48 +60,73 @@ console.log("Loaded commemorativeDays:", commemorativeDays);
 
 
 function renderCalendar(year, month) {
-  // Title
+  // Title (assumes months[] array exists and titleCalendar is a DOM node)
   const textMonth = months[month];
   titleCalendar.textContent = `${textMonth} - ${year}`;
-  // Adding days
+
+  // Clear old days
   daysContainer.innerHTML = "";
-  // fill empties days
-  const firstDay = new Date(year, month, 1).getDay();
+  // Ensure daysContainer is role=rowgroup (outer wrapper should be role=grid)
+  daysContainer.setAttribute("role", "rowgroup");
 
-//   const firstDay = (new Date(year, month, 1).getDay() + 6) % 7;
+  // Get first day of month (0 = Sunday, 1 = Monday, ... 6 = Saturday)
+  const jsFirstDay = new Date(year, month, 1).getDay();
+  // Convert to Monday-first index: 0 = Monday, ... 6 = Sunday
+  const firstDay = (jsFirstDay + 6) % 7;
 
-  for (let j = 1; j < firstDay; j++) {
+  // Total days in month
+  const daysOfMonth = new Date(year, month + 1, 0).getDate();
+
+  // Create the first week row
+  let weekRow = document.createElement("div");
+  weekRow.setAttribute("role", "row");
+
+  // 1) Fill empty slots before the 1st (firstDay blanks)
+  for (let j = 0; j < firstDay; j++) {
     const emptyDay = document.createElement("div");
-    emptyDay.textContent = "  ";
-    daysContainer.appendChild(emptyDay);
+    emptyDay.textContent = ""; // visually empty
+    emptyDay.setAttribute("role", "gridcell");
+    emptyDay.setAttribute("aria-label", "Empty day");
+    // optional: mark as other-month for styling
+    emptyDay.classList.add("other-month");
+    weekRow.appendChild(emptyDay);
   }
 
-  const daysOfMonth = new Date(year, month + 1, 0).getDate();
-  // fill the day container
+  // 2) Fill real days
   for (let i = 1; i <= daysOfMonth; i++) {
     const day = document.createElement("div");
     day.textContent = i;
     day.value = i;
+    day.setAttribute("role", "gridcell");
+    day.setAttribute("aria-label", `Day ${i} ${months[month]} ${year}`);
+    day.tabIndex = 0; // keyboard focusable
 
-    // Create YYYY-MM-DD string for comparison *
-    const dateStr = `${year}-${String(month + 1).padStart(2, "0")}-${String(
-      i
-    ).padStart(2, "0")}`;
-
-    // Check if this day matches any commemorative event
-    const event = commemorativeDays.find((e) => {
-      if (!e.start) return false;
-      return e.start.startsWith(dateStr);
-    });
-
+    // Attach event marker if any commemorative day matches YYYY-MM-DD
+    const dateStr = `${year}-${String(month + 1).padStart(2, "0")}-${String(i).padStart(2, "0")}`;
+    const event = commemorativeDays.find((e) => e.start && e.start.startsWith(dateStr));
     if (event) {
       day.classList.add("commemorative-day");
-      day.title = `${event.summary}\n${event.description || ""}`; //*
+      day.title = `${event.summary}\n${event.description || ""}`;
     }
-    daysContainer.appendChild(day);
-    renderEventList(year, month);
 
+    weekRow.appendChild(day);
+
+    // Determine weekday for the current date, in Monday-first indexing
+    const jsDay = new Date(year, month, i).getDay();
+    const isoDay = (jsDay + 6) % 7; // 0=Mon ... 6=Sun
+
+    // If this is the end of the week (Sunday in Monday-first scheme) OR the last day of month,
+    // close the row and append it to daysContainer.
+    if (isoDay === 6 || i === daysOfMonth) {
+      daysContainer.appendChild(weekRow);
+      // start a fresh week row for the next iteration
+      weekRow = document.createElement("div");
+      weekRow.setAttribute("role", "row");
+    }
   }
+
+  // 3) After rendering all days, update the event list (once)
+  renderEventList(year, month);
 }
 
 function renderEventList(year, month) {
