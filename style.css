@@ -17,4 +17,29 @@ body {
   grid-template-columns: repeat(7, 1fr);
 }
 
+.commemorative-day {
+  background-color: #ffeb3b;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: help;
+}
+
+#event-list {
+  margin: 2rem 0;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+#event-items {
+  list-style: none;
+  padding-left: 0;
+}
+
+#event-items li {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-left: 4px solid #ffeb3b;
+}
+
 
