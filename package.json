@@ -2,5 +2,24 @@
   "dependencies": {
     "ical": "^0.8.0",
     "ics": "^3.8.1"
-  }
+  },
+  "name": "project-days-calendar",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "# Days calendar project",
+  "main": "convert-ics-to-json.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saqibjvd/project-days-calendar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saqibjvd/project-days-calendar/issues"
+  },
+  "homepage": "https://github.com/saqibjvd/project-days-calendar#readme"
 }

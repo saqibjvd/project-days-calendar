@@ -1,6 +1,6 @@
 
 
-// import { getGreeting } from "./common.mjs";
+import { getDaysInMonth } from "./common.mjs";
 //  import daysData from "./days.json" with { type: "json" };
 
 import commemorativeDays from "./commemorative-days.json" with { type: "json" };
@@ -76,7 +76,7 @@ function renderCalendar(year, month) {
     daysContainer.appendChild(emptyDay);
   }
 
-  const daysOfMonth = new Date(year, month + 1, 0).getDate();
+  const daysOfMonth = getDaysInMonth(year,month);
   // fill the day container
   for (let i = 1; i <= daysOfMonth; i++) {
     const day = document.createElement("div");
