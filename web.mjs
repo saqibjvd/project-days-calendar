@@ -1,6 +1,6 @@
 
 
-// import { getGreeting } from "./common.mjs";
+ import { getDaysInMonth } from "./common.mjs";
 //  import daysData from "./days.json" with { type: "json" };
 
 import commemorativeDays from "./commemorative-days.json" with { type: "json" };
@@ -75,7 +75,7 @@ function renderCalendar(year, month) {
   const firstDay = (jsFirstDay + 6) % 7;
 
   // Total days in month
-  const daysOfMonth = new Date(year, month + 1, 0).getDate();
+  const daysOfMonth = getDaysInMonth(year,month);
 
   // Create the first week row
   let weekRow = document.createElement("div");
