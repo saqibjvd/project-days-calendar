@@ -150,7 +150,7 @@ function renderEventList(year, month) {
     // Display each event
     filteredEvents.forEach(event => {
       const li = document.createElement("li");
-      const date = new Date(event.start);
+      const date = new Date(event.start.split("T")[0])
       const formattedDate = date.toDateString(); // e.g., "Tue Oct 14 2025"
   
       li.innerHTML = `<strong>${formattedDate}</strong>: ${event.summary}`;
