@@ -56,7 +56,7 @@ window.onload = function () {
   renderCalendar(activeYear, activeMonth);
 };
 
-console.log("Loaded commemorativeDays:", commemorativeDays);
+
 
 
 function renderCalendar(year, month) {
